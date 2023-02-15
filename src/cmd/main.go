@@ -51,13 +51,13 @@ func getArrowSign(arrowName string) string {
 	var arrow string
 	switch arrowName {
 	case "up":
-		arrow = "↟"
+		arrow = "🔺"
 	case "down":
-		arrow = "↡"
+		arrow = "🔻"
 	case "equal":
-		arrow = "↭"
+		arrow = "--"
 	default:
-		arrow = "?"
+		arrow = "❓"
 	}
 	return arrow
 }
