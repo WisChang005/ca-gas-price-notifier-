@@ -40,7 +40,7 @@ Lastweek: %v`, dArrow, dToday, dYesterday, dLastWeek)
 }
 
 func notifyToLine(msg string) {
-	accessToken := os.Getenv("LINE_TOKEN")
+	accessToken := os.Getenv("PERSONAL_LINE_TOKEN")
 	if err := notify.SendText(accessToken, msg); err != nil {
 		panic(err)
 	}
